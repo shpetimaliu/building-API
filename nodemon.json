@@ -1,0 +1,5 @@
+{
+  "dev": ["src"],
+  "ext": ".ts,.js",
+  "exec": "ts-node ./src/index.ts"
+}
