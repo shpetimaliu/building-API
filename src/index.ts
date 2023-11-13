@@ -5,6 +5,7 @@ import cors from "cors";
 import express from "express";
 import http from "http";
 import mongoose from "mongoose";
+import router from "./router";
 
 const app = express();
 app.use(
@@ -35,3 +36,5 @@ mongoose
   .catch((error) => {
     console.log("Error connecting to the database: ", error);
   });
+
+app.use("/", router());
